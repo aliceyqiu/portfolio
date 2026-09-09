@@ -720,6 +720,7 @@ p5 {
 .img-cap {
     display: flex;
     flex-direction: column;
+    height: max-content;
     gap: 1rem;
     justify-content: first baseline;
     padding: 1rem;
