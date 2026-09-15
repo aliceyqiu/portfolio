@@ -192,6 +192,13 @@ p5 {
 .right {
     align-self: flex-end;
 }
+p2 a {
+    color: var(--red);
+}
+p2 a:hover {
+    text-decoration: underline;
+    transition: ease-in-out 200ms;
+}
 
 
 /*nav bar section*/
@@ -438,6 +445,7 @@ p5 {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: flex-start;
 }
 .project-list {
     display: flex;
@@ -520,6 +528,10 @@ p5 {
     min-width: 0;
     width: 100%;
     height: auto;
+}
+.project-images a:hover{
+    background-color: rgba(204, 0, 0, 0.15);
+    transition: ease-in-out 200ms;
 }
 .dot {
     width: 36px;
@@ -897,7 +909,7 @@ p5 {
 .breakdown {
     display: flex;
     flex-direction: column;
-    width: 50%;
+    width: 60%;
     gap: 8vh;
 }
 .row {
