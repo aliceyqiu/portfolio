@@ -3,158 +3,221 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-        <meta name="keywords" content="alice qiu, portfolio, healthcare design, service design, UI/UX, innovation">
-        <meta name="description" content="Alice Qiu is a designer, currently studying the intersection of design & healthcare at UT Austin.">
+        <meta name="keywords" content="alice yisha qiu, portfolio, healthcare design, service design, UI/UX, innovation, graphic design, research, design thinking, human-centered design (HCD), co-design, northwestern university, dillo day, return of the rodeo, art, sculpture, texas, music festival">
+        <meta name="description" content="Alice Qiu is a designer amongst other things at the intersection of design & healthcare.">
         <meta name="description" content="Alice Qiu's portfolio">
-        <link rel="icon" href="images/favicon.png">
-        <link rel="stylesheet" href="style.css">
+        <meta name="description" content="return of the rodeo (2022)">
+        <link rel="icon" href="images/favicon13.svg">
+        <link rel="stylesheet" href="style2.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Fustat:wght@200;300;400;500;600;700;800&family=Syne:wght@400;500;600;700;800&family=Sometype+Mono:ital,wght@0,400..700;1,700&display=swap" rel="stylesheet">
-        <title>Dillo Day</title>
+        <link rel="preload" href="https://fonts.gstatic.com/s/dmmono/v16/aFTU7PB1QTsUX8KYthqQBK6PYK0.woff2" as="font" type="font/woff2" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=Sometype+Mono:ital,wght@0,400..700;1,700&family=Zhi+Mang+Xing&family=Instrument+Sans:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+        <title>return of the rodeo (2022) | ayq</title>
+        <script>
+            document.addEventListener('DOMContentLoaded', () => {
+                document.querySelectorAll('.zao').forEach(zao => {
+                    zao.addEventListener('mouseenter', () => {
+                        zao.classList.toggle('flipped');
+                    });
+                });
+
+                document.querySelectorAll('.expand-card').forEach(card => {
+                    card.addEventListener('click', () => {
+                        card.classList.toggle('is-expanded');
+                    });
+                });
+            });
+        </script>
     </head>
     <body>
-        <!--nav bar-->
         <header>
             <div class="navbar">
-                <a class="spin-logo" href="index.html" target="_self" style="line-height: 0;">
-                    <img src="images/white 30.png" width="50" height="50" alt="alice qiu logo">
+                <a class="tanghulu" href="index.html" target="_self" alt="alice yisha qiu logo">
+                    <div class="zao">
+                        <div class="inner">
+                            <div class="face front">a</div>
+                            <div class="face back" lang="zh-Hans">邱</div>
+                        </div>
+                    </div>
+                    <div class="zao">
+                        <div class="inner">
+                            <div class="face front">y</div>
+                            <div class="face back" lang="zh-Hans">忆</div>
+                        </div>
+                    </div>
+                    <div class="zao">
+                        <div class="inner">
+                            <div class="face front">q</div>
+                            <div class="face back" lang="zh-Hans">莎</div>
+                        </div>
+                    </div>
                 </a>
                 <div class="navbarnav">
-                    <a href="index.html">work</a>
-                    <a href="https://drive.google.com/file/d/1x5ORns5oGvUTMexN319h48bBKld_ct3t/view?usp=sharing" rel="noopener" target="_blank">resume</a>
+                    <a href="work.html">work</a>
+                    <a href="https://drive.google.com/file/d/1RNH8KNNuwS2MnmzrjSNZcWYnPjq25zQG/view" rel="noopener" target="_blank">resumé</a>
                     <a href="about.html">about</a>
                 </div>
              </div>
         </header>
-        <!--actual page-->
         <main>
-            <section>
-                <div class="proj-header" id="dilloday">
-                    <div class="proj-hero1">
-                        <img src="images/dilloday/header gif cropped loop.gif" alt="welcome to the return of the rodeo gif">
-                    </div>
-                </div>  
-            </section>
-            <section class="proj">
-                <ul class="proj-nav">
-                    <li><a href="#Overview">overview</a></li>
-                    <br>
-                    <li><a href="#Ideation">ideation</a></li>
-                    <br>
-                    <li><a href="#Construction">construction</a></li>
-                    <br>
-                    <li><a href="#Deconstruction">deconstruction</a></li>
-                    <br>
-                    <li><a href="#Reflection">reflection</a></li>
-                </ul>
-                <div class="testing">
-                    <div class="proj-write">
-                        <div class="subheading left-aligned" id="Overview">
-                            <h2>overview</h2>
-                            <img class="underline-png" src="images/pinkunderline.png" height="20" alt="pink underline scribble">
-                        </div>
-                        <p3>Dillo Day is Northwestern University’s annual student-run music festival and the largest of its kind in the country. The theme for Dillo Day 2022 was <span class="highlight"><em>Return of the Rodeo</em></span>, a grand celebration of the festival's 50th anniversary and a nod to the Texas roots of its founders. As a native Texan myself (tips cowboy hat), the theme immediately resonated with me. I applied as a student artist for the Dillo Day art installation and was thrilled to be selected to bring my own interpretation of <em>Return of the Rodeo</em> to life.</p3>
-                    </div>
-                    <div class="proj-write" id="ideation 1">
-                        <div class="subheading left-aligned" id="Ideation">
-                            <h2>ideation</h2>
-                            <img class="underline-png" src="images/pinkunderline.png" height="20" alt="pink underline scribble">
-                        </div>
-                        <p3>There were many reasons why I applied for this Dillo Day’s art installation, but the main one was the theme: <em>Return of the Rodeo</em>. Growing up in Houston, I attended the Houston Livestock Show and Rodeo nearly every year. It was such a normal part of my life that I never really considered the fact that not every state has a rodeo! It wasn’t until I got to college — where I met people from all over the country and the world — that I realized how unique growing up in Texas was, and how unfamiliar the concept of a rodeo was to many people.</p3>
-                        <p3>Thus, for the art installation, I wanted to create something that celebrated the 50th anniversary of Dillo Day as well as highlighted the things I loved most about Texas. I began by listing things that, to me, made Texas uniquely, Texas.</p3>
-                    </div>
-                    <div class="outlined-graphic" id="what's texas">
-                        <div class="figure-container single">
-                            <img src="images/dilloday/whatis.jpg" width="300" alt="what's texas? what's a cowboy?">
-                            <p4>Defining Texas</p4>
+            <!--header section-->
+            <div class="header-proj" id="dilloday" data-reveal>
+                <img src="images/dilloday/header gif cropped loop.gif" alt="Return of the Rodeo gif" title="Return of the Rodeo gif">
+            </div>
+            <!--actual case study-->
+            <div class="body-padding">
+                <hr class="line">
+                <!--high level summary-->
+                <div class="work" data-reveal>
+                    <div class="specs">
+                        <div class="specs-content">
+                            <h4 class="red">materials</h4>
+                            <div class="specs-content-list" id="materials">
+                                <p4 class="burgundy">Air-dry clay</p4>
+                                <p4 class="burgundy">Recycled electronics</p4>
+                                <p4 class="burgundy">Acrylic paint</p4>
+                                <p4 class="burgundy">Wooden chopsticks</p4>
+                            </div>
                         </div>
                     </div>
-                    <div class="proj-write" id="ideation 2">
-                        <p3>I also looked to the description of <em>Return of the Rodeo</em> given by Mayfest Productions, the student org that plans and produces the festival:</p3>
-                        <blockquote>"Return of the Rodeo is a grand celebration of the past through a contemporary lens. It pulls from the archives to launch our history into the future, merging tradition and innovation: the classic rodeo with the modern music festival. A revitalization of rodeo as we know it, our interpretation captures the electric and vivacious energy of a rodeo and translates it into our color scheme and design. Bold yellows, blues, oranges, and pinks jump out in front of dark, muted backgrounds. Gradients and noise breathe new life into vintage iconography. It's the Return of the Rodeo."
-                            <br><br>-Mayfest Productions
-                        </blockquote>
-                        <p3>I was drawn to the tension between the classic and the modern. I wanted to create something that blended the imagery of a traditional rodeo with the energy of a modern music festival, highlighting the contrast between past and present while reimagining them side by side.</p3>
-                    </div>
-                    <div class="outlined-graphic" id="sketches">
-                        <div class="figure-container">
-                            <img src="images/dilloday/dillo_sketch1.jpg" width="300" alt="return of the rodeo initial sketches">
-                            <p4>Initial sketches</p4>
-                        </div>
-                        <div class="figure-container">
-                            <img src="images/dilloday/dillo_sketch2.jpg" width="300" alt="return of the rodeo initial sketches">
-                            <p4></p4>
-                        </div>
-                    </div>
-                    <div class="proj-write" id="construction 1">
-                        <div class="subheading left-aligned" id="Construction">
-                            <h2>construction</h2>
-                            <img class="underline-png" src="images/pinkunderline.png" height="20" alt="pink underline scribble">
-                        </div>
-                        <p3>I ultimately decided on constructing an image of Texas within a computer monitor. After dealing with a few suspicious sellers on Facebook Marketplace (special shoutout to my friend Cat for driving me around), I obtained an Apple Macintosh, a Micron keyboard, and a Microsoft mouse. I initially wanted to hollow out the monitor but keep leave glass screen intact. That proved harder than expected, so I removed the glass screen along with everything else, leaving just the shell of the monitor.</p3>
-                    </div>
-                    <div class="rokugrid" id="monitor construction">
-                        <img class="onespantwo" src="images/dilloday/con1.jpg" width="300" alt="monitor construction wip">
-                        <img class="threespantwo" src="images/dilloday/con2.jpg" width="300" alt="monitor construction wip">
-                        <img class="fivespantwo" src="images/dilloday/con3.jpg" width="300" alt="monitor construction wip">
-                    </div>
-                    <div class="proj-write" id="process 2">
-                        <p3>The next step was to construct the scene within the monitor. I knew I wanted a cowboy to be the center of the scene surrounded by various cacti and rocks. Using air-dry clay and wooden chopsticks, I molded the clay around wooden skeletons. I also recycled styrofoam I already had as the floor of the scene and covering it with a layer of mixed colored clay for that marble effect.</p3>
-                        <p3>For the keyboard, I removed individual keys and painted over them with acrylic paint before spelling out 'Return of Dillo 50'. I made sure to use 'bold yellows, blues, oranges, and pinks' that contrasted the more muted color of the original keyboard.</p3>
-                    </div>
-                    <div class="rokugrid" id="keyboard construction">
-                        <img class="onespantwo" src="images/dilloday/con4.jpg" width="300" alt="keyboard construction wip">
-                        <img class="threespanfour" src="images/dilloday/con5.jpg" width="600" alt="keyboard construction wip">
-                    </div>
-                    <div class="rokugrid" id="finished construction">
-                        <img class="onespanfour" src="images/dilloday/final2.jpeg" width="600" alt="final return of the rodeo keyboard">
-                        <img class="fivespantwo" src="images/dilloday/final1.jpg" width="300" alt="final return of the rodeo">
-                    </div>
-                    <div class="proj-write" id="deconstruction 1">
-                        <div class="subheading left-aligned" id="Deconstruction">
-                            <h2>deconstruction</h2>
-                            <img class="underline-png" src="images/pinkunderline.png" height="20" alt="pink underline scribble">
-                        </div>
-                        <p3>Something I didn't account for was the weather. I wasn't expecting it to be so rainy on the actual day of the festival, so by the time I set up my piece for the outdoor art installation, the air-dry clay had rehydrated and began to melt. Sometime during the actual music festival, some drunk dude smashed my sculpture :( . With the roof of the monitor gone, more and more rain got into the sculpture, exacerbating the melting.</p3>
-                        <p3>By the time I came back to pick up my piece the following week, my dear cowboy and horse along with the cacti have succumbed to Mother Nature. Surprisingly, the keyboard and mouse stayed intact, so I took those home with me. They currently reside on my shelf :) .</p3>
-                    </div>
-                    <div class="rokugrid" id="decon">
-                       <img class="onespantwo" src="images/dilloday/decon0.jpg" width="300" alt="return of the rodeo, deconstructed">
-                       <img class="threespantwo" src="images/dilloday/decon1.jpg" width="300" alt="return of the rodeo, deconstructed">
-                       <img class="fivespantwo" src="images/dilloday/decon3.jpg" width="300" alt="return of the rodeo, deconstructed">
-                       <p4 style="grid-column: 1 / span 6;">Through it's deconstruction/destruction, <em>Return of the Rodeo</em> becomes a fragment of the past. At the same time, it maintains its existence in the present in other ways — in pictures and memories.</p4>
-                    </div>
-                    <div class="proj-write">
-                        <div class="subheading left-aligned" id="Reflection">
-                            <h2>reflection</h2>
-                            <img class="underline-png" src="images/pinkunderline.png" height="20" alt="pink underline scribble">
-                        </div>
-                        <p3>So, what does <em>Return of the Rodeo</em> mean? Is it summoning the past to the present, or bringing the present to the past? And what, really, distinguishes the two?</p3>
-                        <p3>I hope <em>Return of the Rodeo</em> can evoke different interpretations depending on one's perspective. It could signify a nostalgic revival of past traditions and experiences, bringing elements of the past into the present. But it could also suggest a modern reinterpretation of history, where contemporary culture reshapes and reimagines what came before.</p3>
-                        <p3>Time is complex! The boundary between past and present is rarely clear and often subject to individual experiences and memories as well as collective cultural contexts. What we now see as classic or vintage was once contemporary, perhaps even futuristic. Even the phrase 'Return of the Rodeo' implies that the rodeo belongs to the past. And in some ways, to some people, it does. After all, the rodeo today already looks very different from the rodeos of the past, and it will undoubtedly continue to evolve in the decades and centuries to come.</p3>
-                        <p3>In this sense, <em>Return of the Rodeo</em> reflects the cyclical nature of time, where the past continually resurfaces in the present and the present reshapes how we understand the past — where time stops, and flows again.</p3>
+                    <div class="project-description">
+                        <p2>Dillo Day is Northwestern University’s annual student-run music festival and the largest student-run music festival in the country. The theme for Dillo Day 2022 was <i>Return of the Rodeo</i>, a grand celebration of Dillo Day's 50th anniversary and a nod to the Texas roots of the festival’s founders. As a native Texan myself (tips cowboy hat), the theme resonated with me, so I applied as a student artist for the Dillo Day art installation and was thrilled to be selected and have the opportunity bring my interpretation of <i>Return of the Rodeo</i> to life.</p2>
                     </div>
                 </div>
-                <div class="btm-pic">
-                    <img src="images/cowboyhat.png" width="200" alt="cowboy hat doodle">
+                <hr class="dotted-line" style="width: 100%;">
+                <!--full project breakdown-->
+                <div class="work" data-reveal>
+                    <h3 class="red">brainstorm</h3>
+                    <div class="project-description">
+                        <p2>There were main reasons why I applied for this Dillo Day’s art installation, but the main reason was the theme: <i>Return of the Rodeo</i>. Having grown up in Houston, I attended the <a class="text-link" href="https://www.rodeohouston.com/" target="_blank" rel="noopener">Houston Livestock Show and Rodeo</a> nearly every year. It was such a common occurrence for me that I never considered that not every state has a rodeo. It was only when I got to college, where I got to interact with people from all over the country and the world, that I realized what an unique experience growing up in Texas was (and how unfamiliar the concept of a rodeo was to most people)!</p2>
+                        <p2>Thus, for the art installation, I wanted to create something that celebrated the 50th anniversary of Dillo Day as well as highlighted the things I loved most about Texas. I began by listing things that I thought made Texas uniquely, Texas.</p2>
+                        <div class="project-images">
+                            <div class="img-cap">
+                                <img src="images/dilloday/whatis.jpg" alt="what's texas? what's a cowboy?" title="what's texas? what's a cowboy?" style="border: 1px var(--burgundy) solid;">
+                                <p4 class="burgundy">defining Texas</p4>
+                            </div>
+                        </div>
+                        <p2>I also looked to the description of <i>Return of the Rodeo</i> given by Mayfest Productions (the student org that plans and produces Dillo Day).</p2>
+                        <blockquote><i>Return of the Rodeo</i> is a grand celebration of the past through a contemporary lens. It pulls from the archives to launch our history into the future, merging tradition and innovation: the classic rodeo with the modern music festival. A revitalization of rodeo as we know it, our interpretation captures the electric and vivacious energy of a rodeo and translates it into our color scheme and design. Bold yellows, blues, oranges, and pinks jump out in front of dark, muted backgrounds. Gradients and noise breathe new life into vintage iconography. It’s the <i>Return of the Rodeo.</i></blockquote>
+                        <p2>I was really interested in this dichotomy between the classic and the modern; I wanted to make something that combined the classic rodeo and the modern music festival in a way that not only highlighted the differences between the past and the present but also revitalized the two.</p2>
+                    </div>
                 </div>
+                <div class="work" data-reveal>
+                    <h3 class="red">construction</h3>
+                    <div class="project-description">
+                        <div class="project-images">
+                            <div class="img-cap">
+                                <img src="images/dilloday/dillo_sketch1.jpg" alt="return of the rodeo initial sketches" title="return of the rodeo initial sketches">
+                                <p4 class="burgundy">initial sketches</p4>
+                            </div>
+                            <div class="img-cap">
+                                <img src="images/dilloday/dillo_sketch2.jpg" alt="return of the rodeo second sketches" title="return of the rodeo second sketches">
+                                <p4 class="burgundy"></p4>
+                            </div>
+                        </div>
+                        <p2>I ultimately decided on constructing an image of Texas within a computer monitor. After dealing with a few suspicious sellers on Facebook Marketplace (special shoutout to my friend Cat for driving me around), I obtained an Apple Macintosh, a Micron keyboard, and a Microsoft mouse.</p2>
+                        <p2>I initially wanted to hollow out the monitor but keep leave glass screen intact. That proved harder than expected, so I removed the glass screen along with everything else, leaving just the shell of the monitor.</p2>
+                        <div class="project-images">
+                            <div class="img-cap">
+                                <img src="images/dilloday/con1.jpg" alt="monitor construction wip pt.1" title="monitor construction wip pt.1">
+                                <p4 class="burgundy"></p4>
+                            </div>
+                            <div class="img-cap">
+                                <img src="images/dilloday/con2.jpg" alt="monitor construction wip pt.2" title="monitor construction wip pt.2">
+                                <p4 class="burgundy"></p4>
+                            </div>
+                            <div class="img-cap">
+                                <img src="images/dilloday/con3.jpg" alt="monitor construction wip pt.3" title="monitor construction wip pt.3">
+                                <p4 class="burgundy"></p4>
+                            </div>
+                        </div>
+                        <p2>The next step was to construct the scene within the monitor. I knew I wanted a cowboy to be the center of the scene surrounded by various cacti and rocks. Using air-dry clay and wooden chopsticks, I molded the clay around wooden skeletons. I also recycled styrofoam I already had as the floor of the scene and covering it with a layer of mixed colored clay for that marble effect.</p2>
+                        <p2>For the keyboard, I removed individual keys and painted over them with acrylic paint before spelling out 'Return of Dillo 50'. I made sure to use the aforementioned 'bold yellows, blues, oranges, and pinks' that contrasted the more muted color of the original keyboard.</p2>
+                        <div class="project-images">
+                            <div class="img-cap">
+                                <img src="images/dilloday/con4.jpg" alt="keyboard construction wip pt.1" title="keyboard construction wip pt.1">
+                                <p4 class="burgundy"></p4>
+                            </div>
+                            <div class="img-cap">
+                                <img src="images/dilloday/con5.jpg" alt="keyboard construction wip pt.2" title="keyboard construction wip pt.2">
+                                <p4 class="burgundy"></p4>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-            </section>
+                <div class="work" data-reveal>
+                    <h3 class="red">deconstruction</h3>
+                    <div class="project-description">
+                        <div class="project-images">
+                            <div class="img-cap">
+                                <img src="images/dilloday/final2.jpeg" alt="final return of the rodeo keyboard" title="final return of the rodeo keyboard">
+                                <p4 class="burgundy"></p4>
+                            </div>
+                            <div class="img-cap">
+                                <img src="images/dilloday/final1.jpg" alt="final return of the rodeo" title="final return of the rodeo">
+                                <p4 class="burgundy"></p4>
+                            </div>
+                        </div>
+                        <p2>Something I didn't account for was the weather. I wasn't expecting it to be so rainy on the actual day of the festival, so by the time I set up my piece for the outdoor art installation, the air-dry clay had rehydrated and began to melt. Sometime during the actual music festival, some drunk dude smashed my sculpture :( . With the roof of the monitor gone, more and more rain got into the sculpture, exacerbating the melting.</p2>
+                        <div class="project-images">
+                            <div class="img-cap">
+                                <img src="images/dilloday/decon0.jpg" alt="return of the rodeo, deconstructed pt.1" title="return of the rodeo, deconstructed pt.1">
+                                <p4 class="burgundy"></p4>
+                            </div>
+                            <div class="img-cap">
+                                <img src="images/dilloday/decon1.jpg" alt="return of the rodeo, deconstructed pt.2" title="return of the rodeo, deconstructed pt.2">
+                                <p4 class="burgundy"></p4>
+                            </div>
+                            <div class="img-cap">
+                                <img src="images/dilloday/decon2.jpg" alt="return of the rodeo, deconstructed pt.3" title="return of the rodeo, deconstructed pt.3">
+                                <p4 class="burgundy"></p4>
+                            </div>
+                        </div>
+                        <p2>By the time I came back to pick up my piece the following week, my dear cowboy and horse along with the cacti have succumbed to Mother Nature. Surprisingly, the keyboard and mouse stayed intact, so I took those home with me. They currently reside on my shelf :).</p2>
+                    </div>
+                </div>
+                <div class="work" data-reveal>
+                    <h3 class="red">reflection</h3>
+                    <div class="project-description">
+                        <p2>So, what does <i>Return of the Rodeo</i> mean? Is it summoning the past to the present, or bringing the present to the past? And what, really, distinguishes the two?</p2>
+                        <p2>I hope <i>Return of the Rodeo</i> can evoke different interpretations depending on one's perspective. It could signify a nostalgic revival of past traditions and experiences, bringing elements of the past into the present. But it could also suggest a modern reinterpretation of history, where contemporary culture reshapes and reimagines what came before.</p2>
+                        <p2>Time is complex! The boundary between past and present is rarely clear and often subject to individual experiences and memories as well as collective cultural contexts. What we now see as classic or vintage was once contemporary, perhaps even futuristic. Even the phrase 'Return of the Rodeo' implies that the rodeo belongs to the past. And in some ways, to some people, it does. After all, the rodeo today already looks very different from the rodeos of the past, and it will undoubtedly continue to evolve in the decades and centuries to come.</p2>
+                        <p2>In this sense, <i>Return of the Rodeo</i> reflects the cyclical nature of time, where the past continually resurfaces in the present and the present reshapes how we understand the past—where time stops, and flows again.</p2>
+                    </div>
+                </div>
+            </div>
         </main>
-        <!--footer-->
         <footer>
             <div class="footerbar">
-                <div class="navbarnav" id="footer">
-                    <a href="mailto:aqiu0329@gmail.com" target="_blank">email</a>
-                    <a href="www.linkedin.com/in/alice-qiu-99950b1b2" rel="noopener" target="_blank">LinkedIn</a>
-                    <a href="https://open.spotify.com/track/57VfoS1TXAp5Mx7l12MDNa?si=18a4e55f0b194078" rel="noopener" target="_blank">favorite song atm!</a>
+                    <h2 class="light">say hi!</h2>
+                    <a class="tanghulu" href="index.html" target="_top" style="line-height: 0;" alt="alice yisha qiu logo">
+                        <div class="zao">
+                            <div class="inner">
+                                <div class="face front inverted-front">a</div>
+                                <div class="face back" lang="zh-Hans">邱</div>
+                            </div>
+                        </div>
+                        <div class="zao">
+                            <div class="inner">
+                                <div class="face front inverted-front">y</div>
+                                <div class="face back" lang="zh-Hans">忆</div>
+                            </div>
+                        </div>
+                        <div class="zao">
+                            <div class="inner">
+                                <div class="face front inverted-front">q</div>
+                                <div class="face back" lang="zh-Hans">莎</div>
+                            </div>
+                        </div>
+                    </a>
+                    <div class="navbarnav" id="footer">
+                        <a href="mailto:aqiu0329@gmail.com" target="_blank">email</a>
+                        <a href="https://www.linkedin.com/in/alice-qiu-99950b1b2" rel="noopener" target="_blank">LinkedIn</a>
+                        <a href="https://open.spotify.com/track/57VfoS1TXAp5Mx7l12MDNa?si=18a4e55f0b194078" rel="noopener" target="_blank">favorite song atm!</a>
+                    </div>
                 </div>
-                <a class="spin-logo" href="index.html" target="_top">
-                    <img src="images/white 30.png" width="120" height="120" alt="alice qiu logo">
-                </a>
-            </div>
         </footer>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+        <script src="loadgradual.js" defer></script>
     </body>
 </html>

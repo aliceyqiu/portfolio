@@ -44,11 +44,11 @@ main {
     z-index: 1;
     padding: 2vh 0vw 16vh 0vw;
 }
-.bruh {
+.body-padding {
     display: flex;
     flex-direction: column;
     padding: 2vh 2vw 2vh 2vw;
-    gap: 4vh;
+    gap: 2vh;
 }
 footer {
     position: sticky;
@@ -68,6 +68,20 @@ ol, ul {
     font-weight: 300;
     line-height: 125%;
     gap: 1vh;
+}
+blockquote {
+    display: block;
+    margin-top: 0.5rem;
+    margin-bottom: 0.75rem;
+    margin: 1rem 2rem 2rem 4rem;
+    margin-right: 2rem;
+    padding-left: 2rem;
+    color: var(--burgundy);
+    font-family: var(--accent-font);
+    font-size: 1rem;
+    font-weight: 300;
+    line-height: 150%;
+    border-left: 2px var(--red) solid;
 }
  /* ---------- scroll reveal base state ---------- */
 [data-reveal] {
@@ -375,6 +389,9 @@ p2 a:hover {
     background-size: cover;
     background-position: center;
 }
+.header-proj#dilloday {
+    background-color: rgba(11, 5, 30, 1);
+}
 
 /*landing header*/
 .bio {
@@ -437,7 +454,7 @@ p2 a:hover {
     background-color: var(--red);
     width: 100%;
     height: 1px;
-    margin: 3vh 0 2vh 0;
+    margin: 2vh 0 2vh 0;
 }
 
 /*work section*/
@@ -446,6 +463,7 @@ p2 a:hover {
     flex-direction: row;
     justify-content: space-between;
     align-items: flex-start;
+    padding: 3vh 0 4vh 0;
 }
 .project-list {
     display: flex;
@@ -510,11 +528,17 @@ p2 a:hover {
     justify-content: space-between;
     width: 100%;
 }
+.breakdown {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    gap: 8vh;
+}
 .project-description {
     display: flex;
     flex-direction: column;
-    width: 100%;
-    gap: 1.2rem;
+    width: 60%;
+    gap: 2vh;
 }
 .project-images {
     display: flex;
@@ -522,16 +546,13 @@ p2 a:hover {
     align-items: flex-start;
     gap: 1rem;
     width: 100%;
+    padding: 1vh 0 1vh 0;
 }
 .project-images img {
     flex: 1 1 0;
     min-width: 0;
     width: 100%;
     height: auto;
-}
-.project-images a:hover{
-    background-color: rgba(204, 0, 0, 0.15);
-    transition: ease-in-out 200ms;
 }
 .dot {
     width: 36px;
@@ -636,6 +657,7 @@ p2 a:hover {
     transparent 8px,
     transparent 16px
   );
+    margin: 2vh 0 2vh 0;
 }
 .cursor-trail {
     position: fixed;
@@ -713,7 +735,7 @@ p2 a:hover {
     grid-template-rows: repeat(8, minmax(4vh, fit-content));
     column-gap: 1vw;
     row-gap: 4vh;
-    padding: 2vh 0vw;
+    padding: 2vh 0 0 0;
     justify-items: stretch;
 }
 .scrapbook a {
@@ -741,6 +763,41 @@ p2 a:hover {
     width: 100%;
     display: block;
     object-fit: cover;
+}
+.hotspot-image {
+    position: relative;
+    width: 100%;
+}
+.hotspot {
+    position: absolute;
+    cursor: pointer;
+}
+.hotspot.is-active {
+    outline: 1px solid var(--background-yellow);
+    background: rgba(255, 254, 249, 0.25);
+    border-radius: 4px;
+    transition: background 0.15s ease, outline-color 0.15s ease;
+}
+.hotspot-tooltip {
+    position: absolute;
+    pointer-events: none;
+    background-color: rgba(255, 254, 249, 0.5);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    color: var(--burgundy);
+    font-family: var(--accent-font);
+    font-size: 0.8rem;
+    line-height: 125%;
+    padding: 0.55rem 0.75rem;
+    border-radius: 4px;
+    max-width: 240px;
+    white-space: pre-line;
+    opacity: 0;
+    transition: opacity 0.1s ease;
+    z-index: 10;
+}
+.hotspot-tooltip.is-visible {
+    opacity: 1;
 }
 .stickie {
     display: flex;
@@ -905,12 +962,6 @@ p2 a:hover {
     align-self: stretch;
     gap: 0.4rem;
     padding-left: 0.5rem;
-}
-.breakdown {
-    display: flex;
-    flex-direction: column;
-    width: 60%;
-    gap: 8vh;
 }
 .row {
     flex-direction: row;
