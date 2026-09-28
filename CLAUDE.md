@@ -22,8 +22,10 @@ This is Alice Qiu's personal design portfolio — a static website with no build
 - **`style.css`** — Primary stylesheet; defines the design system (colors, typography, layout)
 - **`archivestyle.css`** — Alternate/archive styles for older project pages
 - **`fonts.css`** — Font-face declarations
-- **`myscripts.js`** — Drag-and-drop interaction for `.draggable` elements (mouse events + z-index management)
-- **`salvattore.js`** — Vendored masonry layout library used on gallery/photography pages
+- **`scripts/`** — All JS files:
+  - `myscripts.js` — Drag-and-drop interaction for `.draggable` elements (mouse events + z-index management)
+  - `salvattore.js` — Vendored masonry layout library used on gallery/photography pages
+  - `loadgradual.js`, `cursortrail.js`, `labled-items-hotspots.js` — Per-page interaction scripts
 - **`images/`** — All assets: project images, icons, and photography (`images/fotos/`)
 - **`bootstrap-5.3.3/`** — Vendored Bootstrap (not actively used in main pages)
 

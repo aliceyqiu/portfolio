@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="keywords" content="alice qiu, portfolio, favorite books, library">
+        <meta name="description" content="Alice Qiu's favorite books.">
+        <link rel="icon" href="images/favicon13.svg">
+        <link rel="stylesheet" href="style2.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=Sometype+Mono:ital,wght@0,400..700;1,700&family=Zhi+Mang+Xing&family=Instrument+Sans:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+        <title>library | ayq</title>
+        <script>
+            document.addEventListener('DOMContentLoaded', () => {
+                document.querySelectorAll('.zao').forEach(zao => {
+                    zao.addEventListener('mouseenter', () => {
+                        zao.classList.toggle('flipped');
+                    });
+                });
+            });
+        </script>
+    </head>
+    <body>
+        <!--nav bar-->
+        <header>
+            <div class="navbar">
+                <a class="tanghulu" href="index.html" target="_self" alt="alice yisha qiu logo">
+                    <div class="zao">
+                        <div class="inner">
+                            <div class="face front">a</div>
+                            <div class="face back" lang="zh-Hans">邱</div>
+                        </div>
+                    </div>
+                    <div class="zao">
+                        <div class="inner">
+                            <div class="face front">y</div>
+                            <div class="face back" lang="zh-Hans">忆</div>
+                        </div>
+                    </div>
+                    <div class="zao">
+                        <div class="inner">
+                            <div class="face front">q</div>
+                            <div class="face back" lang="zh-Hans">莎</div>
+                        </div>
+                    </div>
+                </a>
+                <div class="navbarnav">
+                    <!--<a href="work.html">-->work</a>
+                    <a href="https://drive.google.com/file/d/1RNH8KNNuwS2MnmzrjSNZcWYnPjq25zQG/view" rel="noopener" target="_blank">resumé</a>
+                    <a href="about.html">about</a>
+                </div>
+             </div>
+        </header>
+        <main>
+            <!--library grid-->
+            <div class="body-padding">
+                <h3 class="red" data-reveal>shelf of my favorite reads</h3>
+                <hr class="line">
+                <div class="library-grid" id="library-grid"></div>
+            </div>
+        </main>
+        <!--footer-->
+       <footer>
+            <div class="footerbar">
+                <h2 class="light">say hi!</h2>
+                <a class="tanghulu" href="index.html" target="_top" style="line-height: 0;" alt="alice yisha qiu logo">
+                    <div class="zao">
+                        <div class="inner">
+                            <div class="face front inverted-front">a</div>
+                            <div class="face back" lang="zh-Hans">邱</div>
+                        </div>
+                    </div>
+                    <div class="zao">
+                        <div class="inner">
+                            <div class="face front inverted-front">y</div>
+                            <div class="face back" lang="zh-Hans">忆</div>
+                        </div>
+                    </div>
+                    <div class="zao">
+                        <div class="inner">
+                            <div class="face front inverted-front">q</div>
+                            <div class="face back" lang="zh-Hans">莎</div>
+                        </div>
+                    </div>
+                </a>
+                <div class="navbarnav" id="footer">
+                    <a href="mailto:aqiu0329@gmail.com" target="_blank">email</a>
+                    <a href="https://www.linkedin.com/in/alice-qiu-99950b1b2" rel="noopener" target="_blank">LinkedIn</a>
+                    <a href="https://open.spotify.com/track/57VfoS1TXAp5Mx7l12MDNa?si=18a4e55f0b194078" rel="noopener" target="_blank">favorite song atm!</a>
+                </div>
+            </div>
+        </footer>
+        <!--book detail modal-->
+        <div class="book-modal-overlay" id="book-modal-overlay" hidden>
+            <div class="book-modal">
+                <button class="book-modal-close" id="book-modal-close" aria-label="close">✕</button>
+                <img id="book-modal-cover" src="" alt="">
+                <div class="book-modal-info">
+                    <h3 id="book-modal-title"></h3>
+                    <p2 class="burgundy" id="book-modal-author"></p2>
+                    <div class="quote" id="book-modal-quotes" hidden></div>
+                </div>
+            </div>
+        </div>
+        <script src="scripts/loadgradual.js" defer></script>
+        <script src="scripts/cursortrail.js" defer></script>
+        <script src="scripts/books-data.js"></script>
+        <script src="scripts/books.js"></script>
+    </body>
+</html>
