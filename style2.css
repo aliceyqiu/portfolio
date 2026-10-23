@@ -32,9 +32,7 @@ header {
 }
 .header {
     display: flex;
-    flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-between;
     padding: 2rem 2vw 2vh 2vw;
     min-height: 70vh;
 }
@@ -123,7 +121,7 @@ h3 {
 }
 h4 {
     font-family: var(--heading-font);
-    font-size: 1.5rem;
+    font-size: 1.75rem;
     font-weight: 500;
     line-height: 100%;
     margin: 0rem;
@@ -171,6 +169,9 @@ p5 {
     font-weight: 300;
     line-height: 140%;
     margin: 0rem;
+}
+b {
+    font-weight: 600;
 }
 .highlight {
     background-color: rgba(204, 0, 0, 0.15);
@@ -465,6 +466,9 @@ p2 a:hover {
     align-items: flex-start;
     padding: 3vh 0 4vh 0;
 }
+.work h3 {
+    max-width: 28%;
+}
 .horizontal {
     display: flex;
     flex-direction: row;
@@ -743,7 +747,7 @@ p2 a:hover {
 .scrapbook {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: repeat(18, minmax(4vh, fit-content));
+    grid-template-rows: repeat(24, minmax(4vh, fit-content));
     column-gap: 1vw;
     row-gap: 4vh;
     padding: 2vh 0 0 0;
@@ -831,24 +835,22 @@ p2 a:hover {
 #quote0{
     grid-row: 1 / span 1;
     grid-column: 9 / span 4;
-    text-align: right;
     align-self: center;
 }
 #quote1 {
     grid-row: 2 / span 2;
     grid-column: 9 / span 4;
-    text-align: right;
-}
-#drink {
-    grid-row: 4 / span 1;
-    grid-column: 3 / span 2;
-    align-self: center;
 }
 #zest {
     grid-row: 4 / span 1;
     grid-column: 1 / span 2;
     align-self: center;
     justify-content: flex-end;
+}
+#drink {
+    grid-row: 4 / span 1;
+    grid-column: 3 / span 2;
+    align-self: center;
 }
 #fouryears {
     grid-row: 4 / span 2;
@@ -912,12 +914,15 @@ p2 a:hover {
 #quote4 {
     grid-row: 13 / span 2;
     grid-column: 10 / span 3;
-    justify-items: right;
-    text-align: right;
+}
+#safe {
+    grid-row: 13 / span 1;
+    grid-column: 7 / span 2;
+    justify-content: flex-end;
 }
 #mom {
     grid-row: 13 / span 1;
-    grid-column: 7 / span 2;
+    grid-column: 9 / span 2;
 }
 #stickers1 {
     grid-row: 14 / span 2;
@@ -939,6 +944,10 @@ p2 a:hover {
 #photography {
     grid-row: 17 / span 2;
     grid-column: 9 / span 4;
+}
+#quote7 {
+    grid-row: 20 / span 2;
+    grid-column: 2 / span 4;
 }
 
 /*project specific*/
@@ -982,6 +991,7 @@ p2 a:hover {
 }
 .right {
     text-align: right;
+    justify-items: end;
 }
 
 /* library page */

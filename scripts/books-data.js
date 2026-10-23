@@ -4,11 +4,15 @@
 //   "quote": ["first favorite quote", "second favorite quote"]
 const BOOKS = [
   {
-    "title": "Being Mortal: Medicine and What Matters in the End",
-    "author": "Atul Gawande",
-    "isbn": "0805095152",
-    "coverUrl": "https://covers.openlibrary.org/b/isbn/0805095152-L.jpg",
-    "quote": "\“We end up with institutions that address any number of societal goals…but never the goal that matters to the people who reside in them: how to make life worth living when we’re weak and frail and can’t fend for ourselves anymore.\” (pg. 77)"
+    "title": "The Alchemist",
+    "author": "Paulo Coelho",
+    "isbn": "0062315005",
+    "coverUrl": "https://covers.openlibrary.org/b/isbn/0062315005-L.jpg",
+    "quote": [
+      "\“When each day is the same as the next, it’s because people fail to recognize the good things that happen in their lives every day that the sun rises.\" (pg. 27)",
+      "\“You will never be able to escape from your heart, so it’s better to listen to what it has to say. That way, you’ll never have to fear an unanticipated blow.\” (pg. 134)",
+      "\“When I have been truly searching for my treasure, every day has been luminous, because I’ve known that every hour was a part of the dream that I would find it. When I have been truly searching for my treasure, I’ve discovered things along the way that I never would have seen had I not had the courage to try things that seemed impossible for a shephard to achieve.\” (pg. 134)"
+    ]
   },
   {
     "title": "Martyr!",
@@ -25,13 +29,31 @@ const BOOKS = [
     "author": "Michelle Zauner",
     "isbn": "9781984898951",
     "coverUrl": "https://covers.openlibrary.org/b/isbn/9781984898951-L.jpg",
-    "quote": "\"In fact, she was both my first and second words: Umma, then Mom. I called to her in two languages. Even then I must have known that no one would ever love me as much as she would.\""
+    "quote": [
+      "\“My mother had struggled to understand me just as I struggled to understand her. Thrown as we were on opposite sides of a fault line - generational, cultural, linguistic - we wandered lost without a reference point, each of us unintelligible to the other’s expectations…\” (pg. 17)",
+      "\"In fact, she was both my first and second words: Umma, then Mom. I called to her in two languages. Even then I must have known that no one would ever love me as much as she would.\""
+    ]
+  },
+  {
+    "title": "Someone Who Will Love You in All Your Damaged Glory: Stories",
+    "author": "Raphael Bob-Waksburg",
+    "isbn": "9780525432722",
+    "coverUrl": "https://covers.openlibrary.org/b/isbn/9780525432722-L.jpg",
+    "quote": "\“And we will realize that Friday 18 July, like every day in history before it, was a moment, a twenty four-hour trick of the light, a thing that happened once and never again. And that sad truth will just about swallow us whole.\” (pg. 242)"
+  },
+  {
+    "title": "Their Eyes Were Watching God",
+    "author": "Zora Neale Hurston",
+    "isbn": "0061120065",
+    "coverUrl": "https://covers.openlibrary.org/b/isbn/0061120065-L.jpg",
+    "quote": "\"...Love ain’t somethin’ lak uh grindstone dat’s de same thing everywhere and do de same thing tuh everything it touch. Love is lak de sea. It’s uh movin’ thing, but still and all, it takes its shape from da shores it meets, and it’s different with every shore.\" (pg. 191)"
   },
   {
     "title": "The Martian",
     "author": "Andy Weir",
     "isbn": "9780553418026",
-    "coverUrl": "https://covers.openlibrary.org/b/isbn/9780553418026-L.jpg"
+    "coverUrl": "https://covers.openlibrary.org/b/isbn/9780553418026-L.jpg",
+    "quote": "\“If a hiker gets lost in the mountains, people will coordinate a search. If a train crashes, people will line up to give blood. If an earthquake levels a city, people all over the world will send emergency supplies. This is so fundamentally human that it's found in every culture without exception. Yes, there are assholes who just don't care, but they're massively outnumbered by the people who do.\”"
   },
   {
     "title": "The Secret History",
@@ -39,16 +61,6 @@ const BOOKS = [
     "isbn": "1400031702",
     "coverUrl": "https://covers.openlibrary.org/b/isbn/1400031702-L.jpg",
     "quote": "\“Could it be because it (that obstinate little voice in our head) reminds us that we are alive, of our mortality, of our individual souls—which, after all, we are too afraid to surrender but yet make us feel more miserable than any other thing? But isn’t it also pain that often makes us most aware of self? It is a terrible thing to learn as a child that one is a being separate from all the world, that no one and no thing hurts along with one’s burned tongues and skinned knees, that one’s aches and pains are all one’s own. Even more terrible, as we grow older, to learn that no person, no matter how beloved, can ever truly understand us. Our own selves make us most unhappy, and that’s why we’re so anxious to lose them, don’t you think?\” (pg. 36)"
-  },
-  {
-    "title": "The Alchemist",
-    "author": "Paulo Coelho",
-    "isbn": "0062315005",
-    "coverUrl": "https://covers.openlibrary.org/b/isbn/0062315005-L.jpg",
-    "quote": [
-      "\“You will never be able to escape from your heart, so it’s better to listen to what it has to say. That way, you’ll never have to fear an unanticipated blow.\” (pg. 134)",
-      "\“When I have been truly searching for my treasure, every day has been luminous, because I’ve known that every hour was a part of the dream that I would find it. When I have been truly searching for my treasure, I’ve discovered things along the way that I never would have seen had I not had the courage to try things that seemed impossible for a shepard to achieve.\” (pg. 134)"
-    ]
   },
   {
     "title": "The Unbearable Lightness of Being",
@@ -62,26 +74,35 @@ const BOOKS = [
     ]
   },
   {
-    "title": "Their Eyes Were Watching God",
-    "author": "Zora Neale Hurston",
-    "isbn": "0061120065",
-    "coverUrl": "https://covers.openlibrary.org/b/isbn/0061120065-L.jpg",
-    "quote": "\"…Love ain’t somethin’ lak uh grindstone dat’s de same thing everywhere and do de same thing tuh everything it touch. Love is lak de sea. It’s uh movin’ thing, but still and all, it takes its shape from da shores it meets, and it’s different with every shore.\" (pg. 191)"
-  },
-  {
     "title": "Exhalation",
     "author": "Ted Chiang",
     "isbn": "9781101947883",
     "coverUrl": "https://covers.openlibrary.org/b/isbn/9781101947883-L.jpg",
     "quote": [
-      "\"\""
+      "\"And whether or not your brain is impelled by the air that once impelled mine, through the act of reading my words, the patterns that form your thoughts become an imitation of the patterns that once formed mine. And in that way I live again, through you.\" (pg. 56)",
+      "\“Pretend that you have free will. It’s essential that you behave as if your decisions matter, even though you know they don’t. the reality isn’t important; what’s important is your belief, and believing the lie is the only way to avoid a waking coma. Civilization now depends on self-deception. Perhaps it always has.\” (pg. 60)"
     ]
   },
   {
     "title": "The Paper Menagerie",
     "author": "Ken Liu",
     "isbn": "9781481424363",
-    "coverUrl": "https://covers.openlibrary.org/b/isbn/9781481424363-L.jpg"
+    "coverUrl": "https://covers.openlibrary.org/b/isbn/9781481424363-L.jpg",
+    "quote": [
+      "\“Perhaps it is the dream of every parent to keep their child in that brief period between helpless dependence and separate selfhood when the parent is seen as perfect, faultless. It is a dream of control and mastery disguised as love, the dream that Lear had about Cordelia.\”",
+      "\“It is true that no nation, and no historian can tell a story that completely encompasses every aspect of the truth. But it is not true that just because all narratives are constructed, that they are equally far from the truth. The Earth is neither a perfect sphere nor a flat disk, but the model of the sphere is much closer to the truth. ...The fact that we can never have complete, perfect knowledge does not absolve us of the moral duty to judge and take a stand against evil.”"
+    ]
+  },
+  {
+    "title": "Giovanni's Room",
+    "author": "James Baldwin",
+    "isbn": "9780345806567",
+    "coverUrl": "https://covers.openlibrary.org/b/isbn/9780345806567-L.jpg",
+    "quote": [
+      "\"People are full of dirty words. The only time they do not use them, most people I mean, is when they are describing something dirty.\" (pg. 81)",
+      "\"Well, isn’t it true? You don’t have a home until you leave it and then, when you have left it, you can never go back.\" (pg. 116)",
+      "\"She fitted in my arms, she always had, and the shock of holding her caused me to feel that my arms had been empty since she had been away.\" (pg. 120)"
+    ]
   },
   {
     "title": "The Glass Castle",
@@ -102,17 +123,6 @@ const BOOKS = [
     "coverUrl": "https://covers.openlibrary.org/b/isbn/9780062838629-L.jpg"
   },
   {
-    "title": "Giovanni's Room",
-    "author": "James Baldwin",
-    "isbn": "9780345806567",
-    "coverUrl": "https://covers.openlibrary.org/b/isbn/9780345806567-L.jpg",
-    "quote": [
-      "\"People are full of dirty words. The only time they do not use them, most people I mean, is when they are describing something dirty.\" (pg. 81)",
-      "\"Well, isn’t it true? You don’t have a home until you leave it and then, when you have left it, you can never go back.\" (pg. 116)",
-      "\"She fitted in my arms, she always had, and the shock of holding her caused me to feel that my arms had been empty since she had been away.\" (pg. 120)"
-    ]
-  },
-  {
     "title": "The Complete Persepolis",
     "author": "Marjane Satrapi",
     "isbn": "9780375714832",
@@ -123,7 +133,7 @@ const BOOKS = [
     "author": "Won-Pyung Sohn",
     "isbn": "9780062961389",
     "coverUrl": "https://covers.openlibrary.org/b/isbn/9780062961389-L.jpg",
-    "quote": "\"“Even though my brain was a mess, what kept my soul whole was the warmth of the hands holding mine on both sides.\” (pg. 164)"
+    "quote": "\"Even though my brain was a mess, what kept my soul whole was the warmth of the hands holding mine on both sides.\” (pg. 164)"
   },
   {
     "title": "The Autobiography of Malcolm X",
@@ -131,6 +141,51 @@ const BOOKS = [
     "isbn": "9780345376718",
     "coverUrl": "https://covers.openlibrary.org/b/isbn/9780345376718-L.jpg",
     "quote": "\"You have sweated blood to help him build a country so rich that he can today afford to give away millions—even to his enemies! And when those enemies have gotten enough from him to then be able to attack him, you have been his brave soldiers, dying for him.\” (pg. 277)"
+  },
+  {
+    "title": "Dune",
+    "author": "Frank Herbert",
+    "isbn": "9780441172719",
+    "coverUrl": "https://covers.openlibrary.org/b/isbn/9780441172719-L.jpg",
+    "quote": "\“Deep in the human unconscious is a pervasive need for a logical universe that makes sense. But the real universe is always one step beyond logic.\” (pg. 363)"
+  },
+  {
+    "title": "A Little Life",
+    "author": "Hanya Yanagihara",
+    "isbn": "9780804172707",
+    "coverUrl": "https://covers.openlibrary.org/b/isbn/9780804172707-L.jpg",
+    "quote": "\“And if we are being philosophical—which we today are—we can say that life itself is the axiom of the empty set. It begins in zero and ends in zero. We know that both states exist, but we will not be conscious of either experience: they are states that are necessary parts of life, even as they cannot be experienced as life. We assume the concept of nothingness, but we cannot prove it. But it must exist. So I prefer to think that Walter has not died but has instead proven for himself the axiom of the empty set...An elegant mind wants elegant endings, and Walter had the most elegant mind. So I wish him goodbye; I wish him the answer to the axiom he so loved.\” (pg. 288)"
+  },
+  {
+    "title": "The Little Friend",
+    "author": "Donna Tartt",
+    "isbn": "9781400031696",
+    "coverUrl": "https://covers.openlibrary.org/b/isbn/9781400031696-L.jpg",
+    "quote": [
+      "\“With distaste, Harriet reflected upon how life had beaten down the adults she knew, every single grown-up. Something strangled them as they grew older, made them doubt their own powers-laziness? Habit? Their grip slackened; they stopped fighting and resigned themselves to what happened. 'That's Life.' That's what they all said. 'That's Life, Harriet, that's just how it is, you'll see.'\”",
+      "\“Even if it meant that she had failed, she was glad. And if what she'd wanted had been impossible from the start, still there was a certain lonely comfort in the fact that she'd known it was impossible and had gone ahead and done it anyway.\”"
+    ]
+
+  },
+  {
+    "title": "Anxious People",
+    "author": "Fredrik Backman",
+    "isbn": "9781501160844",
+    "coverUrl": "https://covers.openlibrary.org/b/isbn/9781501160844-L.jpg",
+    "quote": [
+      "\“They trust us, which is a crushing responsibility, because they haven’t yet realized that we don’t actually know what we’re doing…Then they get older. Sometimes he managed to forget that for a moment and found himself reaching to hold their hands. They were so embarrassed. Him too. It’s hard to explain to a 12-year-old that when you were little and I walked too fast, you would run to catch up with me and take hold of my hand, and those were the best moments of my life.\” (pg. 22)",
+      "\“You don’t have to like all children. Just one. And children don’t need the world’s best parents, just their own parents. To be perfectly honest with you, what they need most of the time is a chauffeur.\” (pg. 258)"
+    ]
+  },
+  {
+    "title": "How to be Perfect",
+    "author": "Michael Schur",
+    "isbn": "9781982159320",
+    "coverUrl": "https://covers.openlibrary.org/b/isbn/9781982159320-L.jpg",
+    "quote": [
+      "\“The more we try to learn and understand the lives being led by other people—the more we search for a golden mean of empathy—the less we will find it permissible to treat them with cruelty.\” (pg. 38)",
+      "\“And if you’ve tried to do something good a thousand times, and you’ve failed a thousand times, and the people around you are miserable, and you’re at the end of your rope, and you’re losing faith in yourself, you know what we want to do then? Keep trying. Keep trying. Keep trying.\” (pg. 260)"
+    ]
   },
   {
     "title": "The Hot Zone",
@@ -151,45 +206,16 @@ const BOOKS = [
     "coverUrl": "https://covers.openlibrary.org/b/isbn/9780375842207-L.jpg"
   },
   {
-    "title": "Someone Who Will Love You in All Your Damaged Glory: Stories",
-    "author": "Raphael Bob-Waksburg",
-    "isbn": "9780525432722",
-    "coverUrl": "https://covers.openlibrary.org/b/isbn/9780525432722-L.jpg",
-    "quote": "\“And we will realize that Friday 18 July, like every day in history before it, was a moment, a twenty four-hour trick of the light, a thing that happened once and never again. And that sad truth will just about swallow us whole.\” (pg. 242)"
+    "title": "Being Mortal: Medicine and What Matters in the End",
+    "author": "Atul Gawande",
+    "isbn": "0805095152",
+    "coverUrl": "https://covers.openlibrary.org/b/isbn/0805095152-L.jpg",
+    "quote": "\“We end up with institutions that address any number of societal goals…but never the goal that matters to the people who reside in them: how to make life worth living when we’re weak and frail and can’t fend for ourselves anymore.\” (pg. 77)"
   },
   {
     "title": "Gone Girl",
     "author": "Gillian Flynn",
     "isbn": "9780307588364",
     "coverUrl": "https://covers.openlibrary.org/b/isbn/9780307588364-L.jpg"
-  },
-  {
-    "title": "Dune",
-    "author": "Frank Herbert",
-    "isbn": "9780441172719",
-    "coverUrl": "https://covers.openlibrary.org/b/isbn/9780441172719-L.jpg",
-    "quote": "\“Deep in the human unconscious is a pervasive need for a logical universe that makes sense. But the real universe is always one step beyond logic.\” (pg. 363)"
-  },
-  {
-    "title": "A Little Life",
-    "author": "Hanya Yanagihara",
-    "isbn": "9780804172707",
-    "coverUrl": "https://covers.openlibrary.org/b/isbn/9780804172707-L.jpg"
-  },
-  {
-    "title": "The Little Friend",
-    "author": "Donna Tartt",
-    "isbn": "9781400031696",
-    "coverUrl": "https://covers.openlibrary.org/b/isbn/9781400031696-L.jpg"
-  },
-  {
-    "title": "Anxious People",
-    "author": "Fredrik Backman",
-    "isbn": "9781501160844",
-    "coverUrl": "https://covers.openlibrary.org/b/isbn/9781501160844-L.jpg",
-    "quote": [
-      "\“They trust us, which is a crushing responsibility, because they haven’t yet realized that we don’t actually know what we’re doing…Then they get older. Sometimes he managed to forget that for a moment and found himself reaching to hold their hands. They were so embarrassed. Him too. It’s hard to explain to a 12-year-old that when you were little and I walked too fast, you would run to catch up with me and take hold of my hand, and those were the best moments of my life.\” (pg. 22)",
-      "\“You don’t have to like all children. Just one. And children don’t need the world’s best parents, just their own parents. To be perfectly honest with you, what they need most of the time is a chauffeur.\” (pg. 258)"
-    ]
   }
 ];
